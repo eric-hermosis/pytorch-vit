@@ -6,23 +6,12 @@ This repository provides a PyTorch implementation of a **Vision Transformer (ViT
 
 ## Table of Contents
 
-* [Features](#features)
 * [Installation](#installation)
 * [Available Models](#available-models)
 * [Manual Weights and Labels Download](#manual-weights-and-labels-download)
 * [Notebook Example](#notebook-example)
 * [FastAPI Server Example](#fastapi-server-example)
 * [License](#license)
-
----
-
-## Features
-
-* Pretrained ViT models: small (B) and large (L) variants with patch sizes 16×16 and 32×32.
-* Easy-to-use `ViT.build(name)` API for model initialization.
-* Support for both single-image inference and batch processing.
-* Automatic or manual download of model weights and ImageNet labels.
-* FastAPI server for image classification via HTTP requests.
 
 ---
 
