@@ -34,7 +34,7 @@ cd pytorch-vit
 pip install -r requirements.txt
 ```
 
-`requirements.txt` should include:
+`requirements.txt` should include necessary packages for running the examples, but they are not necessary for the model.
 
 ```
 torch
@@ -47,13 +47,9 @@ requests
 
 ---
 
-Got it! Here’s a **much cleaner and more readable table** version of your models with all specifications clearly listed in columns rather than crammed into a single cell. This is fully GitHub-friendly and easy to scan:
-
----
-
 ## Available Models
 
-| Model Name             | Patch Size | Image Size | Model Dim | Hidden Dim | # Layers | # Heads | # Classes |
+| Model Name             | Patch Size | Image Size | Model Dimension | Hidden Dimension | # Layers | # Heads | # Classes |
 | ---------------------- | ---------- | ---------- | --------- | ---------- | -------- | ------- | --------- |
 | `ViT-B-16p-Imagenet1k` | [16,16]    | [384,384]  | 768       | 3072       | 12       | 12      | 1000      |
 | `ViT-B-32p-Imagenet1k` | [32,32]    | [384,384]  | 768       | 3072       | 12       | 12      | 1000      |
@@ -189,17 +185,17 @@ curl -X POST "http://127.0.0.1:8000/predict" -F "file=@example.jpg"
 {
   "predictions": [
     {
-      "class_idx": 388,
+      "index": 388,
       "label": "giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca",
       "probability": 99.79
     },
     {
-      "class_idx": 387,
+      "index": 387,
       "label": "lesser panda, red panda, panda, bear cat, cat bear, Ailurus fulgens",
       "probability": 0.07
     },
     {
-      "class_idx": 297,
+      "index": 297,
       "label": "sloth bear, Melursus ursinus, Ursus ursinus",
       "probability": 0.02
     }
