@@ -1,0 +1,35 @@
+ViT-B-16p-Imagenet1k:
+  patch_size: [16, 16]
+  image_size: [384, 384]
+  model_dimension: 768
+  hidden_dimension: 3072
+  number_of_layers: 12
+  number_of_heads: 12
+  number_of_classes: 1000
+
+ViT-B-32p-Imagenet1k:
+  patch_size: [32, 32]
+  image_size: [384, 384]
+  model_dimension: 768
+  hidden_dimension: 3072
+  number_of_layers: 12
+  number_of_heads: 12
+  number_of_classes: 1000
+
+ViT-L-16p-Imagenet1k:
+  patch_size: [16, 16]
+  image_size: [384, 384]
+  model_dimension: 1024
+  hidden_dimension: 4096
+  number_of_layers: 24
+  number_of_heads: 16
+  number_of_classes: 1000
+
+ViT-L-32p-Imagenet1k:
+  patch_size: [32, 32]
+  image_size: [384, 384]
+  model_dimension: 1024
+  hidden_dimension: 4096
+  number_of_layers: 24
+  number_of_heads: 16
+  number_of_classes: 1000
